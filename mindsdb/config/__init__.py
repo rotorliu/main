@@ -25,6 +25,8 @@ TEST_TRAIN_RATIO = ifEnvElse('TEST_TRAIN_RATIO', 0.1)
 
 # If you want to use CUDA
 USE_CUDA = ifEnvElse('USE_CUDA', False)
+if USE_CUDA == 'True' or USE_CUDA == 'true' or USE_CUDA == 1 or USE_CUDA == '1':
+    USE_CUDA = True
 
 # THESE ARE VALUES TO ESTIMATE THE SAMPLE SIZE TO GATHER STATISTICAL DATA ABOUT THE DATASET
 DEFAULT_MARGIN_OF_ERROR = ifEnvElse('DEFAULT_MARGIN_OF_ERROR', 0.02)
@@ -35,7 +37,8 @@ EXEC_LEARN_IN_THREAD = ifEnvElse('EXEC_LEARN_IN_THREAD', False)
 
 # How big do we want each batch size at training
 SAMPLER_MAX_BATCH_SIZE =  ifEnvElse('SAMPLER_MAX_BATCH_SIZE', 1000)
-
+# We can take in numeric columns as text when the number of unique values in the column is less than this flag
+ASSUME_NUMERIC_AS_TEXT_WHEN_UNIQUES_IS_LESS_THAN =  ifEnvElse('ASSUME_NUMERIC_AS_TEXT_WHEN_UNIQUES_IS_LESS_THAN', 200)
 
 # MindsDB has various Proxies that you can plug into
 MYSQL_PROXY = ifEnvElse('MYSQL_PROXY', False)
@@ -53,12 +56,6 @@ PROXY_SERVER_HOST = ifEnvElse('MINDSDB_PROXY_SERVER_HOST', 'localhost')
 # LOG Config settings
 PROXY_LOG_CONFIG = {
     'format': ifEnvElse('MINDSDB_PROXY_LOG_FORMAT', '[%(levelname)s] %(message)s'),
-    'level': ifEnvElse('MINDSDB_PROXY_LOG_LEVEL', logging.WARNING ),
+    'level': ifEnvElse('MINDSDB_PROXY_LOG_LEVEL', logging.WARNING),
     'filename': ifEnvElse('MINDSDB_PROXY_LOG_FILENAME', None)
 }
-
-
-
-
-
-

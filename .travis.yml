@@ -1,0 +1,20 @@
+language: python
+matrix:
+  include:
+    - python: 3.5
+    - python: 3.6
+    - python: 3.7
+      dist: xenial
+      sudo: true 
+notifications:
+  # send notifications only on master failure
+  email:
+    only: master
+cache: pip
+# install dependencies
+install:
+  - travis_wait pip install mindsdb
+before_script: cd integration_testing
+# run tests
+script:
+  - python3 run_tests.py

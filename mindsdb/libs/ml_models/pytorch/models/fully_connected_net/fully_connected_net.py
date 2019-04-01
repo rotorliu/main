@@ -1,5 +1,3 @@
-
-
 from mindsdb.config import *
 from mindsdb.libs.constants.mindsdb import *
 
@@ -35,8 +33,7 @@ class FullyConnectedNet(BaseModel):
             nn.Linear(input_size, int(math.ceil(input_size/2))),
             torch.nn.LeakyReLU(),
             nn.Dropout(0.2),
-            nn.Linear(int(math.ceil(input_size/2)), output_size),
-            torch.nn.LeakyReLU()
+            nn.Linear(int(math.ceil(input_size/2)), output_size)
         )
 
 
@@ -53,11 +50,9 @@ class FullyConnectedNet(BaseModel):
         :param input: a pytorch tensor with the input data of a batch
         :return:
         """
+
+        if USE_CUDA:
+            input.cuda()
+
         output = self.net(input)
         return output
-
-
-
-
-
-

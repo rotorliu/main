@@ -1,24 +1,23 @@
 
-![MindsDB](https://raw.githubusercontent.com/mindsdb/main/master/mindsdb/proxies/web/static/img/logo1gw.png "MindsDB")
-
+![MindsDB](https://raw.githubusercontent.com/mindsdb/mindsdb/master/mindsdb/proxies/web/static/img/logo1gw.png "MindsDB")
 #
 
+[![Build Status](https://travis-ci.org/mindsdb/mindsdb.svg?branch=master)](https://travis-ci.org/mindsdb/mindsdb)
+[![PyPI version](https://badge.fury.io/py/mindsdb.svg)](https://badge.fury.io/py/mindsdb)
 
-
-
-MindsDB's goal is to make it very simple for developers to use the power of artificial neural networks in their projects. 
-
+MindsDB's goal is to make it very simple for developers to use the power of artificial neural networks in their projects. [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Machine%20Learning%20in%20one%20line%20of%20code%21&url=https://www.mindsdb.com&via=mindsdb&hashtags=ai,ml,machine_learning,neural_networks)
 
 * [Installing MindsDB](docs/Installing.md)
-* [Config Settings](docs/Config.md)
 * [Learning from Examples](docs/examples/basic/README.md)
-* [Inside MindsDB](docs/InsideMindsDB.md)
-
+* [Frequently Asked Questions](docs/FAQ.md)
+* [Provide feedback to improve MindsDB](https://mindsdb.typeform.com/to/c3CEtj)
 
 
 ## Quick Overview
 
-It's very simple to setup 
+You can get started in your own computer/cloud or you can also try it via your browser using [Google Colab](docs/GoogleColab.md).
+
+It's very simple to set up 
 
 ```bash
  pip3 install mindsdb --user
@@ -67,4 +66,4 @@ print('The predicted price is ${price} with {conf} confidence'.format(price=resu
 
 Please help us by reporting any issues you may have while using MindsDB.
 
-https://github.com/mindsdb/main/blob/master/.github/ISSUE_TEMPLATE/bug_report.md
+https://github.com/mindsdb/mindsdb/issues/new/choose

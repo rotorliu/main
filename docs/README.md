@@ -1,13 +1,12 @@
-[<Back to Table of Contents](../README.md)
-### Why use MindsDB?
+![MindsDB](https://raw.githubusercontent.com/mindsdb/mindsdb/master/mindsdb/proxies/web/static/img/logo1gw.png "MindsDB")
+#
 
-Developers today are more aware of the capabilities of Machine Learning, however from ideas of using ML to actual implementations,  there are many hurdles and therefore most ideas of using Machine Learning never even start.
 
-Thanks to MindsDB people building products can **focus more on**:
 
-* Understanding what problems/predictions are interesting for the business.
-* What data should be of interest for a given prediction.
 
-**Less on:**  spending countless hours building models, making data fit into such models, trainining, testing, validating, tunning hyperparameters, ....
+MindsDB's goal is to make it very simple for developers to use the power of artificial neural networks in their projects. 
 
+* [Installing MindsDB](Installing.md)
+* [Learning from Examples](examples/basic/README.md)
+* [Frequently Asked Questions](FAQ.md)
 

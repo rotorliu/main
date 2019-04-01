@@ -1,15 +1,8 @@
-# TODO
-- Add transformation as angurment to train
-- Syntax on predict, when, give values for time series
-- Update the documentation, we changed is null boolean dimension for not null
-- Print stats data on stats generator
-- Break demo code into train/predict
-- Only create time series col representation if average(count(distinct column)) in column by group by is <=1
-- On time series, break test-train automatically
-- When model is finished training, test by column, store importance matrix
-- Distributions on test and validation sets 
-- Fix time series include target column for past readings (IMPORTANT)
-- Update loss function to be log relative
-- Implement logging proxy visualizer
-- Support from dataframe directly
-- Support stream dataframes (http://matthewrocklin.com/blog/work/2017/10/16/streaming-dataframes-1)
+
+# MindsDB roadmap
+
+* versions > 0.9 was focused on goal 1 *(December 2018)*.
+* versions 1.0 and greater will focus on for goal 2 *(January 2019)*
+  * *What to expect*: MindsDB UI where one can visualize explainability goals.
+* versions 2.0 and greater will focus on goal 3 *(March 2019)*.
+  * *What to expect*: Simpler modularization of meta-model building for ML/Experts to contribute.
